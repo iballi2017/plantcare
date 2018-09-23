@@ -111,6 +111,14 @@ section .phone-image{
     }
     #navbar li a{
         font-size: 10px;
+    }.logo-hand{
+        width: 17px;
+        height: 14px;;
+    }
+    .logo{
+        width: 55px;
+        height: 14px;
+        margin-top: 10px;
     }
     #hero button{
         background-color: rgb(43, 119, 8);
@@ -154,7 +162,7 @@ section .phone-image{
 
 @media only screen and (min-width: 1024px){
     header{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         height: 400px;
         background-size: 100% 100%;
