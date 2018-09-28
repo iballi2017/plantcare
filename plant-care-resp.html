@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="plant-care-resp.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    
+    <script src="jquery-3.3.1.min.js"></script>
     <title>Document</title>
 
     <script>
@@ -26,6 +28,7 @@
         <nav>
                 <img src="plant.png" class="logo-hand"><img src="LANTPRO.png" class="logo">
             <img src="menu1.png" alt="menu button" id="menu-button" onclick="openMenu()">
+            <img src="close-icon.png" alt="close button" id="close-button">
                 <ul id="navbar">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -53,5 +56,25 @@
         <p><button class="top-button">LEARN MORE</button></p>
         <img src="Flat-Design.png" class="phone-image">
     </section>
+    
+    <script>
+    $(document).ready(function(){
+        $("#menu-button").click(function(){
+            $("#menu-button").fadeOut();
+            $("#close-button").fadeIn();
+            $("#navbar").fadeIn();
+            $("#heading").css("height","500px");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#close-button").click(function(){
+            $("#menu-button").fadeIn();
+            $("#close-button").fadeOut();
+            $("#navbar").fadeOut();
+            $("#heading").css("height","350px");
+        });
+    });
+    </script>
 </body>
 </html>
